@@ -1,0 +1,1220 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>我把媽咪解鎖了 - momo購物網</title>
+  <link rel="stylesheet" type="text/css" href="images/Layout.css">
+  <link rel="stylesheet" type="text/css" href="images/uiLayout.css">
+  <link rel="stylesheet" type="text/css" href="images/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="images/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="images/pc+mb_layout.css">
+  <link rel="stylesheet" type="text/css" href="images/bootstrap.min.css">
+  <link data-title="模組化公版" rel="stylesheet" type="text/css" href="images/PD_Layout.css">
+  <link rel="stylesheet" type="text/css" href="images/navlight.css">
+  <link data-title="模組化公版" rel="stylesheet" type="text/css" href="images/PD_layout-D2_1f2s.css">
+  <!-- 全域設定  -->
+  <style>
+    body {
+      /* 全頁面背景 */
+      background-color: #f7c4c9;
+      background-image: url(images/LUXEbg.jpg);
+      background-size: 100vw;
+      background-repeat: repeat-y;
+    }
+
+    .WRAPPER {
+      /* 版頭區塊背景 */
+      background-image: url(images/LUXEbgA.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+    }
+
+    @media screen and (max-width: 768px) {
+
+      body {
+        background-image: url(images/LUXEbgm.jpg);
+        background-color: #f7c4c9;
+        background-repeat: no-repeat;
+        background-position: 0 75px;
+      }
+
+      .WRAPPER {
+        background-image: none;
+      }
+    }
+
+    /* 全域圖片滿版 */
+    .container {
+      max-width: 1220px;
+    }
+
+    .container img,
+    .container-fluid img {
+      width: 100%;
+    }
+  </style>
+  <!-- 覆寫側邊選單 -->
+  <style>
+    .fixed_Area .box {
+      filter: drop-shadow(3px 3px 5px #af1b47aa);
+    }
+
+    .NavArea_tabbar {
+      margin: 0 auto 0;
+      width: 100%;
+    }
+
+    .NavArea_tabbar.cate-fixed {
+      width: 100%;
+    }
+
+    .NavArea_tabbar .Nav_box {
+      border-radius: 0px;
+      background-color: #f6f6f6;
+    }
+
+    .NavArea_tabbar .Nav a {
+      display: inline-block;
+    }
+
+    .NavArea_tabbar.cate-fixed .Nav_box {
+      border-radius: 0;
+      background-color: #fff;
+    }
+
+
+    .fixed_Area h3 {
+      background-color: #f02864;
+    }
+
+    .fixed_Area .box li.cate-hover {
+      background-color: #f02864;
+    }
+
+    .fixed_Area .box li {
+      background-color: #f1929f;
+    }
+
+    .fixed_Area .box li a:hover {
+      background-color: #f02864;
+    }
+
+    .fixed_Area .box li a {
+      letter-spacing: -1px;
+      height: 48px;
+      overflow: hidden;
+    }
+
+    .fixed_Area a {
+      display: block;
+      text-decoration: none;
+      color: #fff;
+    }
+  </style>
+  <!-- 覆寫swiper -->
+  <style>
+    .swiperPD {
+      position: relative;
+      z-index: 2;
+    }
+
+    .LUXEswiper .swiper-pagination {
+      position: absolute;
+      left: -12.5%;
+      top: 12%;
+      width: 125%;
+      height: 10%;
+      padding: 0;
+      margin: 0;
+    }
+
+    .LUXEswiper .swiper-slide {
+      background-color: #fff0f0;
+    }
+
+    .LUXEswiper .swiper-slide img {
+      filter: brightness(1);
+      transition-duration: .2s;
+
+    }
+
+    .LUXEswiper .swiper-slide:hover img {
+      filter: brightness(.9);
+      transition-duration: .2s;
+
+    }
+
+    .LUXEswiper .swiper-slide img:hover {
+      filter: brightness(1);
+      transition-duration: .2s;
+
+    }
+
+    .LUXEswiper .swiper-pagination .swiper-pagination-bullet {
+      background: none;
+      background-image: url(images/bonus02_bt01.png);
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 18%;
+      height: 100%;
+      border-radius: 0;
+      transition-duration: .2s;
+    }
+
+    .LUXEswiper .swiper-pagination .swiper-pagination-bullet:hover {
+      opacity: .8;
+      transition-duration: .2s;
+    }
+
+    .LUXEswiper .swiper-pagination .swiper-pagination-bullet:active,
+    .LUXEswiper .swiper-pagination .swiper-pagination-bullet-active:hover {
+      opacity: 1;
+      transition-duration: .2s;
+    }
+
+    @media screen and (max-width: 767px) {
+      .LUXEswiper .swiper-pagination .swiper-pagination-bullet {
+        width: 25%;
+      }
+
+      .LUXEswiper .swiper-pagination {
+        top: 5.5%;
+        height: 4.5%;
+      }
+
+      .swiper-wrapper {
+        height: auto;
+      }
+    }
+
+    .LUXEswiper .swiper-pagination .swiper-pagination-bullet:nth-child(1) {
+      background-image: url(images/bonus02_bt02.png);
+    }
+
+    .LUXEswiper .swiper-pagination .swiper-pagination-bullet:nth-child(2) {
+      background-image: url(images/bonus02_bt03.png);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="WRAPPER articleList">
+    <!-- PC選單 -->
+    <div class="fixed_Area fixed_Area fixed_Area_hide for_pc">
+      <div class="box">
+        <h2 style="margin-left:-23px;"><a class="js-fixed_Area_hide" href="javascript:void(0);">
+            <img class="lazy" src="images/fixed_Area_top.png"></a></h2>
+        <ul class="fixedBox_1">
+          <li class="Nav-slide"><a href="javascript:void(0);">天天解鎖豪禮</a></li>
+          <li class="Nav-slide"><a href="javascript:void(0);">下單享千元禮</a></li>
+          <li class="Nav-slide"><a href="javascript:void(0);">熱銷明星品</a></li>
+          <li class="Nav-slide"><a href="javascript:void(0);">抓緊臉部輪廓</a></li>
+          <li class="Nav-slide"><a href="javascript:void(0);">寵媽必備</a></li>
+          <li class="Nav-slide"><a href="javascript:void(0);">氣質媽咪首推</a></li>
+          <li class="Nav-slide"><a href="javascript:void(0);">生活儀式感</a></li>
+        </ul>
+        <h2 style="margin-left:-23px;"><a href="javascript:goTop('body')">
+            <img class="lazy" src="images/fixed_Area_footer.png"></a></h2>
+      </div>
+      <h3 class="js-fixed_Area_hide"><i></i>快速導覽</h3>
+    </div>
+    <!-- end of PC選單 -->
+
+    <!-- 手機假天momoLOGO(APP隱藏) -->
+    <div class="Area_header_momologo appHide"><a href="https://m.momoshop.com.tw/main.momo" alt="momo購物網">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="106px" height="16px">
+          <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+            d="M103.343,16.000 L84.800,16.000 C83.331,16.000 82.146,14.873 82.146,13.483 L82.146,2.518 C82.146,1.127 83.331,0.000 84.800,0.000 L103.343,0.000 C104.810,0.000 106.000,1.127 106.000,2.518 L106.000,13.483 C106.000,14.873 104.810,16.000 103.343,16.000 ZM93.547,2.183 C91.581,2.483 86.411,4.377 86.411,8.794 C86.411,10.214 87.163,11.570 88.445,12.707 C89.347,13.507 90.595,13.996 90.338,13.758 C89.934,13.383 89.806,12.602 89.906,12.102 C90.172,10.776 91.275,10.383 91.275,10.383 C91.275,10.383 90.800,13.290 95.483,13.753 C95.762,13.789 96.407,13.806 96.443,13.806 C96.515,13.809 97.544,13.729 97.959,13.604 C100.013,13.195 101.732,11.613 101.732,8.662 C101.732,6.652 99.791,2.756 93.547,2.183 ZM74.307,4.705 L69.338,4.705 L69.338,16.000 L64.370,16.000 L64.370,4.705 L59.398,4.705 L59.398,16.000 L54.432,16.000 L54.432,2.517 C54.432,1.125 55.621,0.000 57.086,0.000 L76.624,0.000 C78.090,0.000 79.280,1.125 79.280,2.517 L79.280,16.000 L74.307,16.000 L74.307,4.705 ZM48.910,16.000 L30.370,16.000 C28.903,16.000 27.713,14.875 27.713,13.485 L27.713,2.521 C27.713,1.127 28.903,-0.000 30.370,-0.000 L48.910,-0.000 C50.379,-0.000 51.568,1.127 51.568,2.521 L51.568,13.485 C51.568,14.875 50.379,16.000 48.910,16.000 ZM46.902,5.316 C46.902,4.584 46.276,3.992 45.502,3.992 L33.828,3.992 C33.053,3.992 32.429,4.584 32.429,5.316 L32.429,10.687 C32.429,11.418 33.053,12.011 33.828,12.011 L45.502,12.011 C46.276,12.011 46.902,11.418 46.902,10.687 L46.902,5.316 ZM19.875,4.705 L14.906,4.705 L14.906,16.000 L9.937,16.000 L9.937,4.705 L4.966,4.705 L4.966,16.000 L0.000,16.000 L0.000,2.517 C0.000,1.125 1.189,0.000 2.654,0.000 L22.192,0.000 C23.658,0.000 24.848,1.125 24.848,2.517 L24.848,16.000 L19.875,16.000 L19.875,4.705 Z" />
+        </svg></a></div>
+
+    <!-- MB選單【NavArea_tabbar公版錨點頁籤】 -->
+    <div class="d-block d-md-none NavArea NavArea_tabbar" data-light="icon" data-Btn="" data-num="" data-toptext="">
+      <div class="Nav_bg"></div>
+      <div class="Nav_box">
+        <div class="Nav_toptext">活動主頁<i></i></div>
+        <div class="Nav_Btn"><b data-opentext="Quick Menu"></b><i></i></div>
+        <div class="Nav">
+          <ul class="Nav-wrapper">
+            <li class="Nav-slide"><a href="javascript:void(0);">天天解鎖豪禮</a></li>
+            <li class="Nav-slide"><a href="javascript:void(0);">下單享千元禮</a></li>
+            <li class="Nav-slide"><a href="javascript:void(0);">熱銷明星品</a></li>
+            <li class="Nav-slide"><a href="javascript:void(0);">抓緊臉部輪廓</a></li>
+            <li class="Nav-slide"><a href="javascript:void(0);">寵媽必備</a></li>
+            <li class="Nav-slide"><a href="javascript:void(0);">氣質媽咪首推</a></li>
+            <li class="Nav-slide"><a href="javascript:void(0);">生活儀式感</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="Nav_target"></div>
+    </div>
+
+    <!-- logo -->
+    <div class="Area Area2000 Area_top for_pc">
+      <div class="momologo "><a href="https://www.momoshop.com.tw/main/Main.jsp" target="_blank"></a></div>
+    </div>
+
+    <!-- 版頭 -->
+    <div class="container-fluid p-0 Area Area2000 ">
+
+      <div class="row justify-content-center" style="margin: 10% 0 0 0 ;">
+        <div class="col-md-6 col-12 order-md-1 order-2"><img class="lazy" src="images/top_pd.png"></div>
+        <div class="col-md-4 col-9  order-md-2 order-1  animate__fadeInDown   animate__animated wow"><img class="lazy"
+            src="images/title.png"></div>
+      </div>
+
+
+    </div>
+    <!-- end of 版頭 -->
+
+    <!-- 活動區 -->
+    <div class="container p-0 Area Area1220 js-PC js-navlight_content">
+      <div class="row justify-content-center">
+        <div class="col-md-7 col-12 p-0 mt-3"><img class="lazy" src="images/bonus_title.png"></div>
+        <div class="w-100"></div>
+        <a href="#" target="_blank">
+          <div class="col p-1 " style="display:none;" data-TimeSwitch_start="2023/04/20 00:00:00"
+            data-TimeSwitch_end="2023/05/04 23:59:59" data-TimeSwitch_Myswitch="1">
+            <img src="images/bonus0501.png" class="d-none d-md-block">
+            <img src="images/m_bonus0501.png" class="d-block d-md-none">
+          </div>
+          <div class="col p-1 " style="display:none;" data-TimeSwitch_start="2023/05/05 00:00:00"
+            data-TimeSwitch_end="2023/05/07 23:59:59" data-TimeSwitch_Myswitch="1">
+            <img src="images/bonus0505.png" class="d-none d-md-block">
+            <img src="images/m_bonus0505.png" class="d-block d-md-none">
+          </div>
+          <div class="col p-1 " style="display:none;" data-TimeSwitch_start="2023/05/08 00:00:00"
+            data-TimeSwitch_end="2023/05/11 23:59:59" data-TimeSwitch_Myswitch="1">
+            <img src="images/bonus0508.png" class="d-none d-md-block">
+            <img src="images/m_bonus0508.png" class="d-block d-md-none">
+          </div>
+          <div class="col p-1 " style="display:none;" data-TimeSwitch_start="2023/05/12 00:00:00"
+            data-TimeSwitch_end="2024/05/07 23:59:59" data-TimeSwitch_Myswitch="1">
+            <img src="images/bonus0512.png" class="d-none d-md-block">
+            <img src="images/m_bonus0512.png" class="d-block d-md-none">
+          </div>
+        </a>
+
+        <div class="w-100"></div>
+        <div style="text-align:center; color:#000; font:12px/18px Helvetica;" class="pb-md-5 pb-3 pt-3">實際贈品請以購物車顯示為主
+          贈品數量有限送完為止</div>
+
+      </div>
+
+    </div>
+    <!-- end of 活動區 -->
+
+    <!-- 八品輪播 -->
+    <div class="container p-0 Area js-PC js-navlight_content">
+      <div class="row justify-content-center ">
+        <div class="col-md-7 col-12 p-0"> <a href="https://www.momoshop.com.tw/edm/cmmedm.jsp?npn=1vEKrCihSOJn&n=1"
+            target="_blank" title="">
+            <img class="lazy" src="images/bonus02_title.png">
+          </a></div>
+      </div>
+
+      <div class="row justify-content-center LUXEswiper" style="overflow: hidden; margin-top: 12%;">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide p-0 p-md-2">
+            <div class="row swiperPD ">
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9967034" target="_blank" title="">
+                  <img src="images/bonus02_a01.jpg" alt="">
+                </a>
+              </div>
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11179239" target="_blank" title="">
+                  <img src="images/bonus02_a02.jpg" alt="">
+                </a>
+              </div>
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=10637307" target="_blank" title="">
+                  <img src="images/bonus02_a03.jpg" alt="">
+                </a>
+              </div>
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9960519" target="_blank" title="">
+                  <img src="images/bonus02_a04.jpg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="row swiperPD  ">
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9113066" target="_blank" title="">
+                  <img src="images/bonus02_a05.jpg" alt="">
+                </a>
+              </div>
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=7993706" target="_blank" title="">
+                  <img src="images/bonus02_a06.jpg" alt="">
+                </a>
+              </div>
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2140300007&p_orderType=4"
+                  target="_blank" title="">
+                  <img src="images/bonus02_a07.jpg" alt="">
+                </a>
+              </div>
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9787184" target="_blank" title="">
+                  <img src="images/bonus02_a08.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide p-0 p-md-2">
+            <div class="row swiperPD ">
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=8288166" target="_blank" title="">
+                  <img src="images/bonus02_b01.jpg" alt="">
+                </a>
+              </div>
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11065320" target="_blank" title="">
+                  <img src="images/bonus02_b02.jpg" alt="">
+                </a>
+              </div>
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11048967" target="_blank" title="">
+                  <img src="images/bonus02_b03.jpg" alt="">
+                </a>
+              </div>
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11160451" target="_blank" title="">
+                  <img src="images/bonus02_b04.jpg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="row swiperPD  ">
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11102559" target="_blank" title="">
+                  <img src="images/bonus02_b05.jpg" alt="">
+                </a>
+              </div>
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=6846209" target="_blank" title="">
+                  <img src="images/bonus02_b06.jpg" alt="">
+                </a>
+              </div>
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9917383" target="_blank" title="">
+                  <img src="images/bonus02_b07.jpg" alt="">
+                </a>
+              </div>
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9667011&Area=search&mdiv=403&oid=1_1&cid=index&kw=9667011"
+                  target="_blank" title="">
+                  <img src="images/bonus02_b08.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide p-0 p-md-2">
+            <div class="row swiperPD ">
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9118277" target="_blank" title="">
+                  <img src="images/bonus02_c01.jpg" alt="">
+                </a>
+              </div>
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=9255608" target="_blank" title="">
+                  <img src="images/bonus02_c02.jpg" alt="">
+                </a>
+              </div>
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11173648" target="_blank" title="">
+                  <img src="images/bonus02_c03.jpg" alt="">
+                </a>
+              </div>
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=11102558" target="_blank" title="">
+                  <img src="images/bonus02_c04.jpg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="row swiperPD  ">
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2140300007&p_orderType=4"
+                  target="_blank" title="">
+                  <img src="images/bonus02_c05.jpg" alt="">
+                </a>
+              </div>
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2140300007&p_orderType=4"
+                  target="_blank" title="">
+                  <img src="images/bonus02_c06.jpg" alt="">
+                </a>
+              </div>
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=10908750" target="_blank" title="">
+                  <img src="images/bonus02_c07.jpg" alt="">
+                </a>
+              </div>
+              <div class="go_bt col-md col-6 p-1">
+                <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=10253798" target="_blank" title="">
+                  <img src="images/bonus02_c08.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination "></div>
+      </div>
+    </div>
+    <!-- end of 八品輪播 -->
+
+    <!-- 主打組x5 -->
+    <div class="container p-0 Area Area1220 js-PC js-navlight_content">
+      <div class="row justify-content-center mt-5 mb-3">
+        <div class="col-md-7 col-12 p-0"><img class="lazy" src="images/Area01_title.png"></div>
+      </div>
+
+      <div class="row justify-content-center no-gutters">
+
+        <div class="go_bt col-12 my-md-3 my-1 animate__fadeInUp animate__animated wow">
+          <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=6857629" target="_blank">
+            <img class="lazy" src="images/Area01_PD1.png">
+          </a>
+        </div>
+        <div class="go_bt col-12 my-md-3 my-1 animate__fadeInUp animate__animated wow">
+          <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=10576940" target="_blank">
+            <img class="lazy" src="images/Area01_PD2.png">
+          </a>
+        </div>
+        <div class="go_bt col-12 my-md-3 my-1 animate__fadeInUp animate__animated wow">
+          <a href="https://www.momoshop.com.tw/search/searchShop.jsp?keyword=6820622" target="_blank">
+            <img class="lazy" src="images/Area01_PD3.png">
+          </a>
+        </div>
+        <div class="go_bt col-12 my-md-3 my-1 animate__fadeInUp animate__animated wow">
+          <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=7310777" target="_blank">
+            <img class="lazy" src="images/Area01_PD4.png">
+          </a>
+        </div>
+        <div class="go_bt col-12 my-md-3 my-1 animate__fadeInUp animate__animated wow">
+          <a href="https://www.momoshop.com.tw/goods/GoodsDetail.jsp?i_code=10908744" target="_blank">
+            <img class="lazy" src="images/Area01_PD5.png">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end of 主打組x5 -->
+
+    <!-- 公版1帶8 -->
+    <div class="container my-md-5 my-0 p-0 Area Area1220 js-PC js-navlight_content">
+      <div class="row py-md-3 py-0 justify-content-center" style="background-color:#fff2f2;">
+        <div class="col-md-7 col-12  px-0 mb-md-3 mb-2"><img class="lazy" src="images/Area02_title01.png">
+        </div>
+        <div class="box">
+          <div class="PD_layout " data-pd-col-pc="4" data-pd-col-phone="2" data-pd-img="2" data-pd-h3="2"
+            data-pd-h4="1">
+            <div class="lbtclass">
+              <div class="btclass">
+                <ul class="PD_wrapper">
+                  <!-- -----------------------------------------------【】入稿貼語法從這邊開始----------------------------------------------- -->
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <!-- -----------------------------------------------【】入稿貼語法到這邊結束----------------------------------------------- -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- end of 公版1帶8 -->
+
+    <!-- 公版1帶8 -->
+    <div class="container my-md-5 my-0 p-0 Area Area1220 js-PC js-navlight_content">
+      <div class="row py-md-3 py-0 justify-content-center" style="background-color:#fff2f2;">
+        <div class="col-md-7 col-12  px-0 mb-md-3 mb-2"><img class="lazy" src="images/Area02_title02.png">
+        </div>
+        <div class="box">
+          <div class="PD_layout " data-pd-col-pc="4" data-pd-col-phone="2" data-pd-img="2" data-pd-h3="2"
+            data-pd-h4="1">
+            <div class="lbtclass">
+              <div class="btclass">
+                <ul class="PD_wrapper">
+                  <!-- -----------------------------------------------【】入稿貼語法從這邊開始----------------------------------------------- -->
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <!-- -----------------------------------------------【】入稿貼語法到這邊結束----------------------------------------------- -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- end of 公版1帶8 -->
+
+    <!-- 公版1帶8 -->
+    <div class="container my-md-5 my-0 p-0 Area Area1220 js-PC js-navlight_content">
+      <div class="row py-md-3 py-0 justify-content-center" style="background-color:#fff2f2;">
+        <div class="col-md-7 col-12  px-0 mb-md-3 mb-2"><img class="lazy" src="images/Area02_title03.png">
+        </div>
+        <div class="box">
+          <div class="PD_layout " data-pd-col-pc="4" data-pd-col-phone="2" data-pd-img="2" data-pd-h3="2"
+            data-pd-h4="1">
+            <div class="lbtclass">
+              <div class="btclass">
+                <ul class="PD_wrapper">
+                  <!-- -----------------------------------------------【】入稿貼語法從這邊開始----------------------------------------------- -->
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <!-- -----------------------------------------------【】入稿貼語法到這邊結束----------------------------------------------- -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- end of 公版1帶8 -->
+
+    <!-- 公版1帶8 -->
+    <div class="container my-md-5 my-0 p-0 Area Area1220 js-PC js-navlight_content">
+      <div class="row py-md-3 py-0 justify-content-center" style="background-color:#fff2f2;">
+        <div class="col-md-7 col-12  px-0 mb-md-3 mb-2"><img class="lazy" src="images/Area02_title04.png">
+        </div>
+        <div class="box">
+          <div class="PD_layout " data-pd-col-pc="4" data-pd-col-phone="2" data-pd-img="2" data-pd-h3="2"
+            data-pd-h4="1">
+            <div class="lbtclass">
+              <div class="btclass">
+                <ul class="PD_wrapper">
+                  <!-- -----------------------------------------------【】入稿貼語法從這邊開始----------------------------------------------- -->
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <li class="PD_slide js-PD_id" data-id="">
+                    <div class="PD"><a class="js-PD_url" data-title="商品連結" data-urlpc="" data-urlphone="" href=""
+                        target="_blank">
+                        <div class="PD_img"><img class="lazy js-PD_img" data-title="商品圖" src="images/loadinggif.gif"
+                            src="images/img.jpg" alt="" width="230" height="230" border="0"></div>
+                        <div class="PD_into">
+                          <h3><span class="js-PD_txt3" data-title="特標">破盤下殺現折2901</span><i></i></h3>
+                          <h4><b class="js-PD_txt1" data-title="品牌">【Apple 蘋果】</b><span class="js-PD_txt2"
+                              data-title="品名">iPhone 12 Pro Max 128G</span><i></i></h4>
+                          <p><del class="js-PD_del" data-title="原價">39900</del><b class="js-PD_priceTxt"
+                              data-title="特價標"></b><span class="money">$</span><span class="Price js-PD_price"
+                              data-title="特價">36999</span><small class="js-PD_unit" data-title="單位"></small></p>
+                        </div>
+                      </a></div>
+                  </li>
+                  <!-- -----------------------------------------------【】入稿貼語法到這邊結束----------------------------------------------- -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- end of 公版1帶8 -->
+
+    <!-- 旗艦館連結 -->
+    <div class="container p-0 Area Area1220 ">
+      <div class="row p-0 my-3 justify-content-center">
+        <div class="col-md col-4 p-md-0 p-1 go_bt">
+          <a href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2149400009&p_orderType=6&showType=chessboardType"
+            target="_blank" title="蘭蔻旗艦館">
+            <img src="images/Area_PDlogo_01.jpg" alt=""> </a>
+        </div>
+        <div class="col-md col-4 p-md-0 p-1 go_bt">
+          <a href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2149300012&p_orderType=6&showType=chessboardType"
+            target="_blank" title="契爾氏旗艦館">
+            <img src="images/Area_PDlogo_02.jpg" alt=""></a>
+        </div>
+        <div class="w-100 d-block d-md-none"></div>
+        <div class="col-md col-4 p-md-0 p-1 go_bt">
+          <a href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2141800043&p_orderType=4&showType=chessboardType"
+            target="_blank" title="植村秀旗艦館">
+            <img src="images/Area_PDlogo_03.jpg" alt=""></a>
+        </div>
+        <div class="col-md col-4 p-md-0 p-1 go_bt">
+          <a href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2140300007&p_orderType=4&showType=chessboardType"
+            target="_blank" title="碧兒泉旗艦館">
+            <img src="images/Area_PDlogo_04.jpg" alt=""></a>
+        </div>
+        <div class="col-md col-4 p-md-0 p-1 go_bt">
+          <a href="https://www.momoshop.com.tw/category/DgrpCategory.jsp?d_code=2170900002&p_orderType=4&showType=chessboardType"
+            target="_blank" title="YSL旗艦館">
+            <img src="images/Area_PDlogo_05.jpg" alt=""></a>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- end of 旗艦館連結 -->
+  </div>
+
+
+
+  <script src="images/swiper.min.js"></script>
+  <script charset="utf-8" language="javascript" type="text/javascript"
+    src="https://image.momoshop.com.tw/ecm/js/jquery-1.12.4.js?t=20200511001"></script>
+  <script src="images/bootstrap.bundle.js"></script>
+  <script src="images/owl.carousel.min.js"></script>
+  <script charset="utf-8" language="javascript" type="text/javascript" src="images/main.js"></script>
+  <!--wow套件-->
+  <script charset="utf-8" language="javascript" type="text/javascript" src="images/wow.min.js"></script>
+  <script>new WOW().init();</script>
+  <!--Phone-選單套件-->
+  <script charset="utf-8" language="javascript" type="text/javascript" src="images/navlight.js"></script>
+  <script charset="utf-8" language="javascript" type="text/javascript" src="images/navlight_main.js"></script>
+  <!-- 時間設定 -->
+  <script language="javascript" type="text/javascript">
+    /*
+     * Ghvzon
+     * 指定時間開關物件 TimeSwitch-v1.1
+     *******************************************************************
+     * 啟動器: style="display:none;" data-TimeSwitch_start="2023/04/20 00:00:00" data-TimeSwitch_end="2025/05/07 23:59:59" data-TimeSwitch_Myswitch="1"
+     * 測試時間: data-TimeSwitch_test="2020/1/20 00:00:00"
+     * 說明:
+     * data-TimeSwitch_start    開始時間
+     * data-TimeSwitch_end      結束時間
+     * data-TimeSwitch_Myswitch 動作 0刪除、1打開
+     *******************************************************************
+     */
+    $(function () {
+      //測試時間
+      var TimeSwitch_test = $("[data-TimeSwitch_test]").attr('data-TimeSwitch_test');
+      if (TimeSwitch_test) {
+        TimeSwitch = new Date(TimeSwitch_test);
+        console.log('TimeSwitch_test ing!! ' + TimeSwitch_test)
+      } else {
+        TimeSwitch = new Date();
+      }
+      var TimeSwitchmonth = TimeSwitch.getMonth() + 1; //月
+      var TimeSwitchday = TimeSwitch.getDate(); //日
+      var TimeSwitchhour = TimeSwitch.getHours(); //時
+      var TimeSwitchminute = TimeSwitch.getMinutes(); //分
+      var TimeSwitchsecond = TimeSwitch.getSeconds(); //秒
+      var TimeSwitchweek = TimeSwitch.getDay(); //星期0~6 
+      $("[data-TimeSwitch_start]").each(function () {
+        var $self = $(this);
+        if (TimeSwitchmonth < 10) {
+          TimeSwitchmonth = '0' + TimeSwitchmonth;
+        }
+        if (TimeSwitchday < 10) {
+          TimeSwitchday = '0' + TimeSwitchday;
+        }
+        //範圍時間
+        var Mydate_start = new Date($self.attr('data-TimeSwitch_start'));
+        var Mydate_end = new Date($self.attr('data-TimeSwitch_end'));
+        var Myswitch = $self.attr('data-TimeSwitch_Myswitch');
+        //Myswitch = 0 隱藏
+        console.log('TimeSwitch_now ' + TimeSwitch)
+        if (Myswitch == 0) {
+          if (Mydate_start <= TimeSwitch && TimeSwitch <= Mydate_end) {
+            $self.remove(); //Myswitch:0, 時間內,刪除
+          } else {
+            $self.show(); //Myswitch:0, 時間外,打開
+          }
+        }
+        //Myswitch = 1 打開
+        if (Myswitch == 1) {
+          if (Mydate_start <= TimeSwitch && TimeSwitch <= Mydate_end) {
+            $self.show(); //Myswitch:1, 時間內,打開
+          } else {
+            $self.remove(); //Myswitch:1, 時間外,刪除
+          }
+        }
+      });
+    });
+  </script>
+  <!-- swiper設定 -->
+  <script>
+    var LUXEswiper = new Swiper('.LUXEswiper', {
+      //★5.2.1★小圓點【基本】-白點swiper-pagination-white, 黑點swiper-pagination-black
+      pagination: {
+        el: '.LUXEswiper .swiper-pagination',
+        clickable: true, //觸擊切換
+      },
+      //★5.2.1★左右切換-白色箭頭swiper-button-white, 黑色箭頭swiper-button-black  
+      navigation: {
+        nextEl: '.LUXEswiper .swiper-button-next',
+        prevEl: '.LUXEswiper .swiper-button-prev',
+      },
+      //★5.2.1★自動撥放
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false, //觸擊後不再自動輪播
+      },
+      //★5.2.1★切換特效(淡化)
+      effect: 'slide', //切換特效 fade(淡化) cube(立方體) coverflow(3D) flip(翻牌) slide(一般)
+      fadeEffect: {
+        crossFade: false //打開自動淡出
+      },
+      //排版
+      slidesPerView: 1, //顯示幾個
+      slidesPerGroup: 1, //一次切換幾個
+      spaceBetween: 0, //間距
+      loop: true,
+    });
+  </script>
+</body>
+
+</html>
